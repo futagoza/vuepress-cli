@@ -22,6 +22,15 @@ module.exports = {
                 exclude: /\.node$/,
                 use: [ "shebang-loader" ],
             },
+            {
+                test: /\.js$/,
+                loader: "string-replace-loader",
+                options: {
+                    search: "require[(]([^'\"])",
+                    replace: "__non_webpack_require__($1",
+                    flags: "g"
+                }
+            }
         ]
     },
     resolve: {
