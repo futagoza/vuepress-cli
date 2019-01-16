@@ -1,0 +1,35 @@
+{
+    "name": "vuepress-cli",
+    "version": "1.0.0-alpha.32",
+    "description": "Minimalistic doc generator with Vue component based layout system",
+    "keywords": [
+        "documentation",
+        "vue",
+        "generator"
+    ],
+    "repository": "futagoza/vuepress-cli",
+    "bugs": "https://github.com/futagoza/vuepress-cli/issues",
+    "license": "MIT",
+    "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
+    "main": "index.js",
+    "bin": {
+        "vuepress": "index.js"
+    },
+    "files": [
+        "index.js"
+    ],
+    "scripts": {
+        "build": "webpack"
+    },
+    "devDependencies": {
+        "eslint": "5.12.0",
+        "eslint-config-futagozaryuu": "5.6.0",
+        "shebang-loader": "0.0.1",
+        "vuepress": "1.0.0-alpha.32",
+        "webpack": "4.28.4",
+        "webpack-cli": "3.2.1"
+    },
+    "engines": {
+        "node": ">= 8"
+    }
+}
