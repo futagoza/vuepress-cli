@@ -20,7 +20,8 @@
         "vuepress.js"
     ],
     "scripts": {
-        "build": "webpack"
+        "build": "webpack",
+        "generate": "uglifyjs --self -o uglify.js"
     },
     "devDependencies": {
         "eslint": "5.12.0",

@@ -1,5 +1,6 @@
 "use strict";
 
+const path = require( "path" );
 const webpack = require( "webpack" );
 
 module.exports = {
@@ -34,6 +35,9 @@ module.exports = {
         ]
     },
     resolve: {
+        alias: {
+            "uglify-js$": path.resolve( __dirname, "uglify.js" ),
+        },
         mainFields: [ "main" ],
     },
     performance: {
