@@ -5,7 +5,7 @@ const webpack = require( "webpack" );
 module.exports = {
 
     mode: "production",
-    entry: "./vuepress.js",
+    entry: require.resolve( "vuepress" ),
     output: {
         path: __dirname,
         filename: "index.js",
