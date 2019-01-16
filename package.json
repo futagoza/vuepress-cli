@@ -13,10 +13,11 @@
     "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
     "main": "index.js",
     "bin": {
-        "vuepress": "index.js"
+        "vuepress": "vuepress.js"
     },
     "files": [
-        "index.js"
+        "index.js",
+        "vuepress.js"
     ],
     "scripts": {
         "build": "webpack"
