@@ -90,6 +90,9 @@ module.exports = {
         // optional modules for: @vue/component-compiler-utils
         "less",
         "node-sass",
+        // Special cases that can't be bundled
+        "@vuepress/theme-default",
+        "prismjs",
     ].join( "|" ) + ")", "i" ),
     plugins: [
         new webpack.DefinePlugin( {
