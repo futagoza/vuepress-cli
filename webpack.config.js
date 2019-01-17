@@ -44,6 +44,7 @@ module.exports = {
         hints: false,
     },
     target: "node",
+    node: false,
     stats: {
         all: false,
         errors: true,
@@ -93,6 +94,10 @@ module.exports = {
     plugins: [
         new webpack.DefinePlugin( {
             "process.env.STYLUS_COV": false,
+            "__filename": "__filename",
+            "__dirname": "__dirname",
+            "require.extensions": "require.extensions",
+            "System.import": false,
         } ),
     ],
 
