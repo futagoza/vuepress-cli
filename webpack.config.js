@@ -45,11 +45,6 @@ module.exports = {
     },
     target: "node",
     node: false,
-    stats: {
-        all: false,
-        errors: true,
-        modules: true,
-    },
     externals: new RegExp( "^(" + [
         // optional modules for: consolidate
         "atpl",
