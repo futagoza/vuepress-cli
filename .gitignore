@@ -60,6 +60,10 @@ typings/
 # next.js build output
 .next
 
+# temporary files
+/TODO.md
+/webpack.old-config.js
+
 # generated output
 /index.js
 /uglify.js
